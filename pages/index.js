@@ -87,7 +87,7 @@ function index({ posts, cryptoCurrencyPost, feerIndexPost }) {
   );
 }
 
-const api_key = "6cad0780-7ab0-4025-866d-f71e4b56d3ee";
+const api_key = "YOUR API KEY";
 export async function getStaticProps() {
   // Api keyleri url ekle.
   // Json
