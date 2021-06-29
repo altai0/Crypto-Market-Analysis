@@ -322,7 +322,7 @@ export async function getStaticPaths() {
   };
 }
 
-const api_key = "6cad0780-7ab0-4025-866d-f71e4b56d3ee";
+const api_key = "YOUR API KEY";
 export async function getStaticProps({ params }) {
   //coin info
   const res = await fetch(
@@ -353,7 +353,7 @@ export async function getStaticProps({ params }) {
   const currentBitcoinPricePost = await currentBitcoinPriceRes.json();
   //cryptometer trend indicator
   const trendRes = await fetch(
-    "https://api.cryptometer.io/trend-indicator-v3/?api_key=Fw1jgh24W2YKAs66UPa36iuOX126uAXPm665HCd4"
+    "https://api.cryptometer.io/trend-indicator-v3/?api_key=YOUR API KEY"
   );
   const trendPost = await trendRes.json();
   //order book analysis
@@ -363,12 +363,6 @@ export async function getStaticProps({ params }) {
   const orderBookPost = await orderBookRes.json();
 
   const bitcoinPrice = currentBitcoinPricePost.data.BTC.quote.USD.price;
-
-  //long short data
-  // const lsRes = await fetch(
-  //   `https://api.cryptometer.io/current-day-long-short-v2/?e=binance&symbol=btcusdt&api_key=Fw1jgh24W2YKAs66UPa36iuOX126uAXPm665HCd4`
-  // );
-  // const lsPost = await lsRes.json()
 
   return {
     props: {
