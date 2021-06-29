@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-```bash
+```
   I made this project in order to see and analyze the data on the cryptocurrency exchange more easily.
   I'm sharing it with everyone because I can never finish it.
 ```
